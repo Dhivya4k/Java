@@ -65,7 +65,6 @@ void createuser() {
     if(updateIndex>=0 && updateIndex<users.size()){
         System.out.println("Enter user name:");
         String newName = sc.nextLine();
-
         System.out.println("Enter user age :");
         if (!sc.hasNextInt()) {
             System.out.println("Invalid input, Please enter a number!");

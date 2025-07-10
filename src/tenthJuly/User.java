@@ -9,7 +9,6 @@ public  class User {
             this.name=name;
             this. age=age;
             this. email=email;
-
         }
         void display(){
             System.out.println("Name :"+name +", Age : "+age+", Email : "+email);

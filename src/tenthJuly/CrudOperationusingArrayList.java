@@ -12,7 +12,7 @@ public class CrudOperationusingArrayList {
 
             if (sc.hasNextInt()) {
                 choice = sc.nextInt();
-                sc.nextLine(); 
+                sc.nextLine();
 
                 switch (choice) {
                     case 1:
