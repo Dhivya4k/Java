@@ -38,9 +38,7 @@ public class  CrudOperationusingArrayList{
                     System.out.println("Enter User age :");
                     if (ab.hasNextInt()) {
                         int age = ab.nextInt();
-                        ab.nextLine(); // clear buffer
-                        // continue with using age
-
+                        ab.nextLine();
 
                         System.out.println("Enter User email :");
                         String email = ab.nextLine();
@@ -63,8 +61,7 @@ public class  CrudOperationusingArrayList{
                         }
                     }else {
                             System.out.println("Invalid input! Please enter a valid integer for age.");
-                            ab.nextLine(); // clear invalid input
-                            // you can retry or skip
+                            ab.nextLine();
                         }
 
                 }
@@ -77,13 +74,10 @@ public class  CrudOperationusingArrayList{
                 }
 
                 case 3 -> {
-
                     System.out.print("Enter user number to update: ");
                     if (ab.hasNextInt()) {
                         int updateIndex = ab.nextInt() - 1;
-                        ab.nextLine(); // clear buffer
-
-
+                        ab.nextLine();
                     if(updateIndex >=0 && updateIndex<users.size()) {
                         System.out.println("Enter User name :");
                         String newName = ab.nextLine();
@@ -97,22 +91,16 @@ public class  CrudOperationusingArrayList{
                         if (!newMail.contains("@gmail.com")) {
                             System.out.println("Invalid Email. Email must contain '@gmail.com'. User not added.");
                         }
-
                             users.set(updateIndex, new User(newName, newAge, newMail));
                             System.out.println("User Details successfully updated.");
 
                         }
-
-
-                        } else {
+                    } else {
                             System.out.println("Invalid input! Please enter a valid number.");
                             ab.nextLine();
                         }
 
                     }
-
-
-
 
                 case 4 -> {
                      System.out.println("Enter User number to Delete:");
